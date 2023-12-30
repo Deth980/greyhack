@@ -12,7 +12,7 @@ if count == lq.val then break
 
 print(count + "/" + lq.val)
 if lt.val < 1 then wait 30
-if lt.val > .9 then wait lt
+if lt.val > .9 then wait lt.val
 
 
 end while
