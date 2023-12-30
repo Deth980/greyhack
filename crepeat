@@ -1,0 +1,18 @@
+cmd = user_input("Command to loop(do not put modifiers!!):")// command
+mod = user_input("Modifiers for command(ip, port, etc:") // command modifiers
+lt = user_input("Time in seconds between each loop:")//loop time
+lq = user_input("How many times to loop:")//loop qty
+count = 0
+while true
+clear_screen
+get_shell.launch("/bin/"+cmd,mod)
+count = count + 1
+
+if count == lq.val then break
+
+print(count + "/" + lq.val)
+if lt.val < 1 then wait 30
+if lt.val > .9 then wait lt
+
+
+end while
