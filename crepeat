@@ -1,5 +1,5 @@
 cmd = user_input("Command to loop(do not put modifiers!!):")// command
-mod = user_input("Modifiers for command(ip, port, etc:") // command modifiers
+mod = user_input("Modifiers for command(ip, port, etc):") // command modifiers
 lt = user_input("Time in seconds between each loop:")//loop time
 lq = user_input("How many times to loop:")//loop qty
 count = 0
