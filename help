@@ -1,2 +1,3 @@
 //reads out a file called commands.txt in /home/user/ that can be manually updated with command info
+//you must create commands.txt in /home/user/ folder
 print(get_content(get_shell.host_computer.File("commands.txt")))
