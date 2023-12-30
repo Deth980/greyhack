@@ -1,0 +1,7 @@
+parent = get_shell.host_computer.File("/bin")
+if parent.is_folder then
+	files = parent.get_files
+	for file in files
+		print(file.name)
+	end for
+	end if
