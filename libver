@@ -1,0 +1,17 @@
+parent = get_shell.host_computer.File("/lib")
+metaxploit = include_lib(current_path+"/metaxploit.so")
+
+if not metaxploit then metaxploit = include_lib("/lib/metaxploit.so")
+	
+if not metaxploit then
+	print("missing metaxploit")
+	else
+	
+	if parent.is_folder then
+		files = parent.get_files
+		for file in files
+			lib = metaxploit.load("/lib/"+file.name)
+			print(file.name+":"+lib.version)
+	end for
+end if
+end if
